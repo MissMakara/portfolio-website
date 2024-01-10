@@ -11804,7 +11804,7 @@ fieldset:disabled .btn {
   --bg-color: #19211e;
   --heading-color: #fdfffc;
   --border-color-light: rgba(255, 255, 255, 0.2);
-  --iframe-filter: grayscale(100%);
+  --iframe-filter: grayscale(0%);
   --bg-grey: #0b0d0e;
   --bg-light: #131917;
   --serach-shadow: rgb(6 8 8);
@@ -12756,7 +12756,7 @@ li {
 }
 
 .fa-bold:before {
-  content: "\f032";
+  content: "\43";
 }
 
 .fa-bolt:before {
@@ -13607,9 +13607,6 @@ li {
   content: "\f210";
 }
 
-.fa-database:before {
-  content: "\f1c0";
-}
 
 .fa-deaf:before {
   content: "\f2a4";
@@ -15638,6 +15635,14 @@ li {
 .fa-mobile-alt:before {
   content: "\f3cd";
 }
+.fa-python:before{
+  content: "\f3e2";
+}
+
+.fa-database:before{
+  content: "\f1c0";
+}
+
 
 .fa-modx:before {
   content: "\f285";
@@ -16201,10 +16206,20 @@ li {
 
 .fa-puzzle-piece:before {
   content: "\f12e";
+
 }
 
 .fa-python:before {
   content: "\f3e2";
+  
+}
+
+.fa-head-side-gear:before {
+  content: "\e611";
+}
+
+.fa-database:before {
+  content: "\f1c0";
 }
 
 .fa-qq:before {
@@ -18818,7 +18833,8 @@ div#small-dialog iframe {
 a.footer-logo {
   margin: 0;
   padding: 0;
-  font-size: 34px;
+  /* font-size: 34px; */
+  font-size: 50px;
   font-weight: 700;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -19495,7 +19511,7 @@ ul.single-info li p {
 .w3l-progress .progress-bar.gradient-1:before {
   content: "";
   position: absolute;
-  right: 20%;
+  right: 5%;
   top: 90%;
   border-radius: 50%;
   transform: translate(50%, -50%);
@@ -19511,7 +19527,7 @@ ul.single-info li p {
 .w3l-progress .progress-bar.gradient-2:before {
   content: "";
   position: absolute;
-  right: 5%;
+  right: 15%;
   top: 90%;
   border-radius: 50%;
   transform: translate(50%, -50%);
@@ -19527,7 +19543,7 @@ ul.single-info li p {
 .w3l-progress .progress-bar.gradient-3:before {
   content: "";
   position: absolute;
-  right: 40%;
+  right: 20%;
   top: 90%;
   border-radius: 50%;
   transform: translate(50%, -50%);
@@ -19543,7 +19559,7 @@ ul.single-info li p {
 .w3l-progress .progress-bar.gradient-4:before {
   content: "";
   position: absolute;
-  right: 15%;
+  right: 30%;
   top: 90%;
   border-radius: 50%;
   transform: translate(50%, -50%);
@@ -19563,25 +19579,25 @@ ul.single-info li p {
 .w3l-progress .info1 h6.progress-tittle {
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 80%;
+  width: 95%;
 }
 
 .w3l-progress .info2 h6.progress-tittle {
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 95%;
+  width: 85%;
 }
 
 .w3l-progress .info3 h6.progress-tittle {
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 60%;
+  width: 80%;
 }
 
 .w3l-progress .info4 h6.progress-tittle {
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 85%;
+  width: 70%;
 }
 
 /* //skills */
@@ -19767,7 +19783,9 @@ ul.single-info li p {
 .lightbox-title {
   color: black;
 }
-
+.lightbox-text{
+  color: black;
+}
 .w3l-gallery span {
   font-size: 18px;
   color: #eee;
