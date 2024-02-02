@@ -6,5 +6,11 @@ email-template.html
 error.html
 multiple-page-index.html
 old_send_main(sendmail).php
+send_mail.php
 services.html
 shortcodes.html
+portfolio-env/*
+vendor/*
+favicon_io.zip
+favicon_io(1).zip
+.env

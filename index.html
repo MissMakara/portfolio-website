@@ -10,8 +10,10 @@
     <!-- google font -->
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
+
 </head>
 
 <body>
@@ -794,6 +796,9 @@
                     </ul> -->
                 </div>
                 <div class="col-md-6 contact-right mt-md-0 mt-5 ps-lg-0">
+                    <div class="alert alert-success fade show" role="alert" id="successAlert" style="display: none";>
+                        Form submitted successfully!
+                    </div>
                     <form id="contact-form" method="post" enctype="application/x-www-form-urlencoded" class="signin-form">
                         <div id = "message-container" class="alert alert-success alert-dismissible fade show" role="alert"  style="visibility: hidden;">
                        
@@ -812,10 +817,13 @@
                             <textarea name="email_message" id="email_message" placeholder="Type your message here*"
                                 required=""></textarea>
                         </div>
+                    
                         <button class="btn btn-style" type="submit"><a 
                     
                             >Send Message</a></button>
+
                     </form>
+                   
                
                 </div>
             </div>
@@ -942,23 +950,21 @@
                 const data = await response.text(); // Assuming the response is text, not JSON
 
                 console.log(data);
-                  // Form submitted successfully, show an alert
-                const messageContainer = document.getElementById('message-container');
-                
-                messageContainer.textContent = 'Form submitted successfully';
-                // messageContainer.style.visibility="visible"
-                // setTimeout(() => {
-                messageContainer.style.visibility = 'visible';
-                // }, 3000);
-                document.getElementById("contact-form").reset();
-              // 3000 milliseconds = 3 seconds
-            
-                // Clear form fields
-                setTimeout(() => {
-                    $('.alert').alert('close');
-                }, 2000);
 
-                window.location.reload();
+                // Form submitted successfully, show an alert
+                document.getElementById('successAlert').style.display = "block";
+            
+
+                setTimeout(function() {
+                
+                    document.getElementById("contact-form").reset();
+                    document.getElementById("successAlert").style.display = "none";
+                    
+                    // $('#successAlert').alert('close');
+               
+                },2000)
+      
+                //window.location.reload();
                                 
 
             } catch (error) {
