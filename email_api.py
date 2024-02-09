@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 
 app = Flask(__name__)
-# CORS(app)  # Enable CORS for all routes
+CORS(app)  # Enable CORS for all routes
 load_dotenv()
 
 def print_exception():
@@ -60,7 +60,7 @@ def send_email():
             with smtplib.SMTP_SSL('smtp.gmail.com',465, context=context) as smtp:
                 smtp.login(email_sender, email_password)
                 smtp.sendmail(email_sender, email_receiver, em.as_string())
-                
+
         except Exception as e:
             return ("Email sending failed: {}".format(str(e)))
 

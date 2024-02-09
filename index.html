@@ -930,7 +930,8 @@
             async function fetchData() {
             console.log("options is type:", typeof options)
             try {
-                const response = await fetch("http://127.0.0.1:5000/send_email", {
+                const response = await fetch("http://209.250.234.125:5000/send_email", {
+
                     method: 'POST',
                     headers: {
                         "Content-Type": "application/json",
