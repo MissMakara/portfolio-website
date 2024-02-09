@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+# CORS(app)  # Enable CORS for all routes
 load_dotenv()
 
 def print_exception():
