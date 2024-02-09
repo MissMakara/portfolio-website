@@ -51,7 +51,7 @@ def send_email():
         return jsonify({"status": "success"})
 
     except Exception as e:
-        return ("An error occured:", str(e))
+        return ("An error occured: {}", str(e))
 
 
 if __name__ == '__main__':
